@@ -1,26 +1,23 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup lang="ts">
+// No-op, just TS SFC demo
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<template>
+  <main class="p-3">
+    <p><b>remote  application! </b></p>
+    <nav style="display: flex; gap: 12px; margin-bottom: 12px">
+      <router-link to="/">Home</router-link>
+      <router-link to="/page2">page 2</router-link>
+      <router-link to="/page3">page 3</router-link>
+
+    </nav>
+    <router-view />
+  </main>
+</template>
+
+
+<style lang="css">
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 </style>
