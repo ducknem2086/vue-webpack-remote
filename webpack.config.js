@@ -12,7 +12,7 @@ module.exports = ()=> ({
   entry: path.resolve(__dirname, "src/main.ts"),
   target: ["web", "es2020"], // or "es2020"
   output: {
-    publicPath: "http://localhost:3001/",
+    publicPath: "auto",
     clean: true,
   },
   resolve: {
